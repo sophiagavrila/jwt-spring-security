@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,6 +18,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor 
 @AllArgsConstructor
 @Entity
+@Table(name="users")
 public class User implements Serializable {
 	
 	@Id
@@ -27,6 +29,8 @@ public class User implements Serializable {
 	private String firstName;
 	private String lastName;
 	private String username;
+	
+	@Column(name="pwd")
 	private String password;
 	private String email;
 	private String profileImageUrl;
