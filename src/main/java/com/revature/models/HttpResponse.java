@@ -26,7 +26,5 @@ public class HttpResponse {
 	private HttpStatus httpStatus;
 	private String reason;
 	private String message;
-	
-	
-	
+
 }
