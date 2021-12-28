@@ -27,7 +27,7 @@ import com.revature.models.UserPrincipal;
  * This Class is responsible for generating the JWT's to send to the client,
  * And validating the JWT's received with the prev. generated token.
  */
-public class JWTProvider {
+public class JwtProvider {
 
 	/**
 	 * The secret is a random string that the algorithm uses to encode/decode our
@@ -163,6 +163,9 @@ public class JWTProvider {
 		String subject = verifier.verify(token).getSubject();
 		
 		return subject;
-		
 	}
+	
+	/**
+	 * After completing all of the methods here, create the Filter.
+	 */	
 }
