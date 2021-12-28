@@ -165,20 +165,4 @@ public class JWTProvider {
 		return subject;
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
